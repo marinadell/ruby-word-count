@@ -19,10 +19,7 @@ class Phrase
 
   private
   def normalized_words
-    @words.downcase.split(non_word_characters)
+    @words.split(/\W+/)
   end
-
-  def non_word_characters
-    /\W+/
-  end
+  
 end
