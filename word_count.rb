@@ -20,7 +20,7 @@ class Phrase
   private
   def normalized_words
     clean_words=@words.gsub(/[:,!@%&"$^.]/, " ")
-    word_array = clean_words.downcase.split(" ")
+    unquoted_words=clean_words.downcase.scan(/\w+(?:'\w+)*/)
   end
   
 end
