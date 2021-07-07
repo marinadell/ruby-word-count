@@ -19,7 +19,8 @@ class Phrase
 
   private
   def normalized_words
-    @words.downcase.split(/\W+/)
+    clean_words=@words.gsub(/[:,!@%&"$^.]/, " ")
+    word_array = clean_words.downcase.split(" ")
   end
   
 end
