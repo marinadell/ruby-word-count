@@ -6,6 +6,8 @@ To get started with TDD, see the `README.md` file in your
 `ruby/word-count` directory.
 =end
 
+# used https://rubular.com/ to build regex
+
 class Phrase
   def initialize(words)
     @words = words
